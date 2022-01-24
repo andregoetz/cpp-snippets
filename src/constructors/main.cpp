@@ -22,7 +22,7 @@ int main() {
     TwoAttribute t{3, 4};
     cout << t.a << "," << t.b << endl;
 
-//    A a = 7; //not allowed beacause explicit
+//    A a3 = 7; //not allowed beacause explicit
     A a = A(7);
     A a1 = A(a);
     A a2 = A(move(a));

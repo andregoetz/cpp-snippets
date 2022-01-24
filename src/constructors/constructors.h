@@ -32,6 +32,9 @@ public:
     A(const A &other);
 
     A(A &&other) noexcept;
+
+    //const behind method name -> method can be used on const Objects
+    void andreas() const{}
 };
 
 #endif //CPP_SNIPPETS_CONSTRUCTORS_H

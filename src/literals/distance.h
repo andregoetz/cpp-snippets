@@ -15,8 +15,10 @@ private:
 
     friend Distance operator "" _ft(long double);
 
+    //define "+" funktionality
     friend Distance operator+(const Distance &lhs, const Distance &rhs);
 
+    //explicit constructor
     explicit Distance(long double distanceInM) : distanceInM(distanceInM) {
 #ifdef __DEBUG__
         std::cout << "Distance()" << std::endl;
