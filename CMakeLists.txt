@@ -7,3 +7,4 @@ find_package(Threads REQUIRED)
 link_libraries (${CMAKE_THREAD_LIBS_INIT})
 
 add_executable(hello src/hello.cpp)
+add_executable(constructors src/constructors/main.cpp src/constructors/constructors.cpp)
