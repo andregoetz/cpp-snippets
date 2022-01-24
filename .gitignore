@@ -1,1 +1,7 @@
+# VSC
+.vscode
+build
+
+# Jetbrains
 .idea
+cmake-build-debug
