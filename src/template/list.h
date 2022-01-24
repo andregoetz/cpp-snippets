@@ -19,7 +19,7 @@ private:
 
     std::unique_ptr<Node> root{};
 
-    friend std::ostream &operator<<(std::ostream &out, const List<T> &list) {
+    friend std::ostream &operator<<(std::ostream &out, const List<value_type> &list) {
         out << "[";
         auto *p = &(list.root);
         while (*p != nullptr) {
@@ -33,11 +33,19 @@ private:
         return out;
     }
 
+    //alternative with implementation not in the header
+//    friend std::ostream &operator<< <value_type>(std::ostream &out, const List<value_type> &list);
+
 public:
     void add(value_type data);
 
     void clear();
 };
+
+//template<typename T>
+//std::ostream &operator<<(std::ostream &out, const List<T> &list) {
+//    //code
+//}
 
 template<typename T>
 void List<T>::add(List::value_type data) {
