@@ -33,7 +33,7 @@ string state_to_string(state s) {
 
 
 
-// ---------------- b) -----------------------
+// ---------------- mine) -----------------------
 // Bitte das folgenden Makro einkommentieren,
 // so bald die Unteraufgabe geloest ist
 #define A1_b
@@ -176,7 +176,7 @@ bool test_A1_a() {
 #endif
 }
 
-//////////////// b) //////////////////
+//////////////// mine) //////////////////
 
 bool test_A1_b() {
 #ifdef A1_b
@@ -250,7 +250,7 @@ bool test_A1_f() {
 int main() {
     StartTest(3);
     Assert("a) ", test_A1_a());
-    Assert("b) ", test_A1_b());
+    Assert("mine) ", test_A1_b());
     Assert("d) ", test_A1_d());
     Assert("e) ", test_A1_e());
     Assert("f) ", test_A1_f());

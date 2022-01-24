@@ -34,7 +34,7 @@ int main() {
     {
         List<string> list;
         list.add("a");
-        list.add("b");
+        list.add("mine");
         list.add("c");
         cout << list << endl;
         list.clear();
