@@ -1,8 +1,11 @@
 # Code Snippets for C++
 
 * [Constructors](src/constructors)
+* [File Reading and Writing](src/fstream)
+* [Functors and std::function](src/functor)
 * [Operators](src/operators)
-* [Data Types](src/literals)
-* [Template](src/template)
+* [Literals](src/literals)
+* [Templates](src/template)
 * [Threads](src/threads)
 * [Inheritance](src/inheritance)
+* [STL](src/stl)
