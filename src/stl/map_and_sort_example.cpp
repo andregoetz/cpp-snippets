@@ -33,7 +33,7 @@ public:
 int main() {
     cout << "Alle Variablennamen"s << endl;
     map<string, size_t> var_names;
-    ifstream file("../src/data/names.txt");
+    ifstream file("../data/names.txt");
     while (file.is_open()) {
         string str;
         file >> str;

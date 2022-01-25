@@ -6,7 +6,7 @@
 using namespace std;
 
 void read_without_getline() {
-    ifstream file("../src/data/names.txt");
+    ifstream file("../data/names.txt");
     while (file.is_open()) {
         string str;
         file >> str; //file >> noskipws >> str --> for not skipping whitespaces
@@ -40,11 +40,11 @@ void write_all_lines(const string &filepath, const vector<string> &lines) {
 }
 
 int main() {
-    auto lines = read_all_lines("../src/data/input.txt");
+    auto lines = read_all_lines("../data/input.txt");
     for (const string &l: lines) {
         cout << l << endl;
     }
-    write_all_lines("../src/data/output.txt", lines);
+    write_all_lines("../data/output.txt", lines);
     try {
         read_all_lines("ERROR_FILE");
     } catch (const string &fnfe) {
