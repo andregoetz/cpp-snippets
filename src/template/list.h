@@ -33,7 +33,7 @@ private:
         return out;
     }
 
-    //alternative with implementation not in the header
+    //alternative with implementation not in the class --> implementation still needs to be INSIDE the header
 //    friend std::ostream &operator<< <value_type>(std::ostream &out, const List<value_type> &list);
 
 public:
@@ -44,7 +44,17 @@ public:
 
 //template<typename T>
 //std::ostream &operator<<(std::ostream &out, const List<T> &list) {
-//    //code
+//    out << "[";
+//    auto *p = &(list.root);
+//    while (*p != nullptr) {
+//        out << p->get()->data;
+//        p = &(p->get()->next);
+//        if (*p != nullptr) {
+//            out << ", ";
+//        }
+//    }
+//    out << "]";
+//    return out;
 //}
 
 template<typename T>
