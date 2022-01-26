@@ -7,6 +7,7 @@ find_package(Threads REQUIRED)
 link_libraries (${CMAKE_THREAD_LIBS_INIT})
 
 add_executable(constructors src/constructors/main.cpp src/constructors/constructors.cpp)
+add_executable(construct_array_example src/constructors/array_example.cpp src/constructors/array.cpp)
 add_executable(operators src/operators/main.cpp src/operators/roman.cpp)
 add_executable(data_types src/literals/main.cpp)
 add_executable(template_meta src/template/template_meta.cpp)
