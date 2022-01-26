@@ -2,6 +2,7 @@
 #define CPP_SNIPPETS_CONSTRUCTORS_H
 
 #include <iostream>
+#include <initializer_list>
 #include <vector>
 
 //Attributes and methods are public in struct
@@ -18,6 +19,8 @@ struct TwoAttribute {
     int b;
 
     TwoAttribute(int _a = 1, int _b = 2);
+
+    TwoAttribute(const std::initializer_list<int>& elements);
 };
 
 //Special Constructors

@@ -21,6 +21,8 @@ int main() {
     cout << tOne.a << "," << tOne.b << endl;
     TwoAttribute t{3, 4};
     cout << t.a << "," << t.b << endl;
+    TwoAttribute tInitilazier = {5, 6};
+    cout << tInitilazier.a << "," << tInitilazier.b << endl;
 
 //    A a3 = 7; //not allowed beacause explicit
     A a = A(7);
