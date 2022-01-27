@@ -39,10 +39,8 @@ int main() {
         file >> str;
         if (str.empty()) {
             file.close();
-        } else {
-            if (is_name(str)) {
-                var_names[str]++;
-            }
+        } else if (is_name(str)) {
+            var_names[str]++;
         }
     }
     for (const auto &i: var_names) {

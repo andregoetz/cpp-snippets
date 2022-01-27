@@ -3,12 +3,12 @@
 
 using namespace std;
 
-//std::function as parameter
+//std::function_ptr as parameter
 double eval_std_fun(const function<double(double)> &f, double x) {
     return f(x);
 }
 
-//functor as parameter
+//function_ptr pointer as parameter
 double eval_fun_ptr(double (*f)(double), double x) {
     return f(x);
 }
